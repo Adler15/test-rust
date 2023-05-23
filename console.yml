@@ -1,0 +1,34 @@
+log:
+  level: -1
+  log_file: /tmp/console/server.log
+  max_size: 20
+  max_backups: 7
+  max_age: 7
+  local_time: true
+server:
+  ip: 0.0.0.0
+  port: 10010
+  enable_cors: true
+  enable_tls: false
+  cert_file: ""
+  key_file: ""
+  # pprof:
+  #   enabled: true
+  #   ip: 127.0.0.1
+  #   port: 12371
+  # swagger:
+  #   enabled: true
+  #   ip: 0.0.0.0
+  #   port: 12372
+  # ginMode: debug
+db:
+  user: idoe
+  password: password
+  host: 127.0.0.1
+  port: 5432
+  db_name: vault
+  ssl_mode: disable
+  max_idle_conns: 20
+  max_open_conns: 200
+  debug: true
+  log_level: 4
